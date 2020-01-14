@@ -1,0 +1,10 @@
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
+    root: WARN
+spring:
+  data:
+    mongodb:
+      uri: '{cipher}880782f382a6d1319548c211099c7e897392b87cc259e13510d0d0eda5575a72b386838706da13098bea1527d99a42c4'
+server:
+  port: 8080

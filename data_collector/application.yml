@@ -1,0 +1,27 @@
+spring:
+  data:
+    mongodb:
+      uri: '{cipher}a6349e79f57283322524228056976f0966ff90ef9a8f402c6ac94203aa3f465df735269ab6b284bdd46247b09637cf3e552d8b94a100003a3f4dc84f91c3981c335596eb975141dacd02001c4fb960ef5ce4c357c3731e4e5e8aa4b96d991ac8'
+  mail:
+    host: smtp.mail.ru
+    port: 465
+    username: '{cipher}9e2fac7ae9f453dd290b6fb47ae6442d5d7d3ba2f1d846d68cd3f8c9c3b0f6f63f22da8322fb6f475059ce2597ee40e1'
+    password: '{cipher}311b598f0e13ce6a2f41a49308f40ed08fb03380f69d33bd5c35e8ccc0eb9b55'
+    protocol: smtps
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info, datacollector
+  endpoint:
+    health:
+      show-details: always
+data-collector:
+  serverEmail: '{cipher}311b598f0e13ce6a2f41a49308f40ed08fb03380f69d33bd5c35e8ccc0eb9b55'
+server:
+  port: 8081
